@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de compras de pizzeria</title>
+    <link rel = "stylesheet" href="css\normalize.css">
+    <link rel = "stylesheet" href="css\style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+         <img class="header__logo" src = "img/logo.jpg" alt="logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Menu</a>
+        <a class="navegacion__enlace " href="nosotros.html">Nosotros</a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>Fran'z Pizzas</h1>
+        
+        <div class="pizza">
+            <img class="pizza__imagen" src="img/2.jpg" alt="pizza producto">
+            <div class="pizza__contenido">
+                <p>
+                    eu fermentum. Fusce blandit odio tincidunt odio ornare commodo. Nam id tempus arcu. In odio libero, 
+                    mollis ut dapibus sit amet, porttitor at mi. Vestibulum hendrerit erat sit amet tellus tincidunt efficitur. 
+                    Vivamus laoreet, orci at euismod congue, sem velit dignissim augue, eget malesuada augue lorem et diam.
+                    
+                </p>
+              
+               <form class="formulario">
+                <select class="formulario__campo">
+                    <option disabled selected>--seleccionar tamaño--</option>
+                    <option>Pequeña</option>
+                    <option>Mediana</option>
+                    <option>Grande</option>
+                    <option>Gigante</option>
+                </select>
+
+                <select class="formulario__campo">
+                    <option disabled selected>--seleccionar especialidad--</option>
+                    <option>Hawaina</option>
+                    <option>Amantes de la Carne</option>
+                    <option>Margarita</option>
+                    <option>Pizza Suprema</option>
+                    <option>Pizza de Hongos</option>
+                </select>
+            <input class="formulario__campo" type="number" placeholder="cantidad" min="1">
+            <input class="formulario__submit" type="submit" value="Agregar Al Carrito">
+
+               </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+<footer class="footer">
+    <p class="footer__texto">Sammy's Pizza Store -- Todos los derechos reservados 2022</p>
+    <p class="autor">Desarrollado por Josue Lopez</p>
+</footer>
+</html>

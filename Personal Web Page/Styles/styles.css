@@ -1,0 +1,234 @@
+/*globales*/
+:root{
+    --blanco: #ffffff;
+    --negro: #212121;
+    --primario: #ffc107;
+    --secundario: #0097a7;
+    --gris: #757575;
+
+}
+.shadow{
+    box-shadow: -1px 11px 31px -2px rgba(0,0,0,0.59);
+   
+    background-color: rgba(0,0,0,0.5);
+    padding: 2rem;
+    border-radius: 2rem;
+    }
+/*prototipos */
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+    color: var(--blanco);
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+html{
+    font-size: 62.5%;
+    /* usar el box sizin a border box y despues la clase de abajo sirve para mejorar el posicionamiento*/
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+/**scroll snap **/
+.servicio, 
+.navegacion-principal,
+.formulario{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+body{
+    font-family: 'Krub', sans-serif;
+    font-size: 16px;
+    background-image: linear-gradient(to top, #883126 0%, #71beddec 60%, #ffffff 100%);
+}
+
+.titulo span{
+    font-size: 2rem;
+}
+.contenedor{
+   max-width: 120rem;
+   margin: 0 auto;
+}
+/*navegacion */
+.nav-bg{
+    background-color: var(--secundario);
+}
+.navegacion-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.navegacion-principal a{
+    font-weight: bold;
+    color: var(--blanco);
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem;
+}
+.navegacion-principal a:hover{
+    background-color: var(--primario);
+    
+
+    color: var(--negro);
+}
+@media (min-width: 768px){
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+}
+/*hero */
+.hero{
+    background-image: url(../img/hero2.jpg);
+    background-size: cover;
+    height: 430px;
+    position: relative;
+    margin-bottom: 2rem;
+}
+.contenido-hero{
+position: absolute;
+background-color: rgba(0,0,0, .7);
+width: 100%;
+height: 100%;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.contenido-hero h2,
+.contenido-hero p{
+    color: var(--blanco);
+}
+.ubicacion{
+    display: flex;
+    align-items: flex-end;
+}
+.boton{
+    background-color: var(--secundario);
+    color: var(--blanco);
+    padding: 1rem 3rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 7rem;
+    text-transform: uppercase;
+    border: none;
+
+}
+.boton:hover{
+    cursor: pointer;
+}
+@media (min-width: 768px){
+    .boton{
+        width: auto;
+    }
+}
+@media (min-width: 768px){
+ 
+/*servicios*/
+.contenedor h2{
+        color: var(--blanco);
+      
+}
+.servicios{
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+ column-gap: 1rem;/*esto es para separar los grid*/   
+}   
+}
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio p{
+    line-height: 2;/* interlineado*/
+    color: var(--blanco);
+}
+
+.servicio h3{
+    color: #0fdff7;
+    font-weight: bold;
+}
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    border-radius: 50%;
+    background-color: var(--negro);
+    display: flex;
+    justify-content: space-evenly;/* con esto le damos espacio entre los iconos*/
+    align-items: center; /* aqui centramos en forma vertical*/
+}
+/*formulario*/
+.formulario{
+    background-color: var(--gris);
+    width: min(60rem, 100%); /*utiliza el valor mas pequenio*/
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1rem;
+
+
+}
+
+.formulario fieldset{
+    border: none;
+}
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    color: #0fdff7;
+}
+@media (min-width: 768px){
+    .contenedor-campos{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        column-gap: 1rem;
+        grid-template-rows: auto auto 20rem;
+     }
+}
+
+.campo{
+margin-bottom: 1rem;
+}
+.campo:nth-child(3),
+.campo:nth-child(4){
+    grid-column: 1/3;
+}
+.campo label{
+color: var(--blanco);
+font-weight: bold;
+margin-bottom: .5rem;
+display: block;
+}
+.input-text{
+    border: none;
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 3rem;
+}
+.enviar .boton{
+    width: 100%;
+}
+.campo textarea{
+    height: 18rem;
+}
+/** footer **/
+.footer{
+    text-align: center;
+    color: var(--blanco);
+}
