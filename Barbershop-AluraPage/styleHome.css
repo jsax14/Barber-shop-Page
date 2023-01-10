@@ -1,0 +1,77 @@
+.titulo-principal{
+    padding-left: 30px;
+    
+}
+
+.tituloCentralizado{
+    text-align: center;  
+}
+header {
+    background-color: #BBBBBB;
+    padding: 20px 0;
+    text-align: -webkit-center;
+   
+}
+.caja{
+    width: 940px;
+    position: relative;
+   
+}
+nav{
+   position: absolute;
+   right: 0px;
+   
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #C78C19;
+    text-decoration: underline;
+}
+p{
+    text-align: center;
+}
+
+em strong{
+    color: red;
+}
+#mision{
+    font-size: 20px;
+}
+#banner{
+    width: 100%;
+}
+/*seccion de diferenciales */
+.principal{
+    background: #cccccc;
+    padding: 20px;
+}
+.diferenciales{
+    background: #ffffff;
+    padding: 30px;
+}
+.items{
+    font-style: italic;
+}
+.diferenciales ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+
+}
+h2{
+    text-align: center;
+}
+.imagenDiferenciales{
+    width: 50%;
+}
