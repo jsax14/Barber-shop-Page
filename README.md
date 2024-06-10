@@ -1,2 +1,2 @@
-# Barber-shop-Page
-this is a page of a barber shop create by Josue Lopez
+HTML projects
+this is a some pages create with html and css by Josue Lopez
